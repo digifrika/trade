@@ -1,0 +1,31 @@
+/* ============================================================
+   CLIENTS MARQUEE
+============================================================ */
+.clients{
+  background:var(--white);
+  border-bottom:1px solid var(--gray-mid);
+  padding:1.2rem 0;
+  overflow:hidden;
+}
+.marquee-wrap{
+  display:flex;
+  width:max-content;
+  animation:marquee 22s linear infinite;
+}
+.marquee-wrap:hover{animation-play-state:paused}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.client-logo{
+  display:flex;
+  align-items:center;
+  padding:0 2.5rem;
+  opacity:.5;
+  filter:grayscale(1);
+  transition:var(--transition);
+  font-family:'Inter',sans-serif;
+  font-weight:700;
+  font-size:.9rem;
+  color:var(--navy);
+  letter-spacing:.05em;
+}
+.client-logo:hover{opacity:1;filter:none;color:var(--orange)}
+.client-logo i{font-size:1.6rem;margin-right:.5rem}

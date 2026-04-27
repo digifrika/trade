@@ -1,0 +1,38 @@
+/* ============================================================
+   AVANTAGES STRIP
+============================================================ */
+.avantages{
+  background:var(--navy);
+  padding:2.5rem 2rem;
+}
+.avantages-grid{
+  max-width:1280px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:2rem;
+}
+.avantage-item{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  color:#fff;
+}
+.avantage-icon{
+  width:54px;height:54px;
+  flex-shrink:0;
+  background:rgba(255,107,0,.15);
+  border:2px solid rgba(255,107,0,.3);
+  border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.4rem;
+  color:var(--orange);
+  transition:var(--transition);
+}
+.avantage-item:hover .avantage-icon{background:var(--orange);border-color:var(--orange);color:#fff}
+.avantage-title{font-weight:700;font-size:.95rem;margin-bottom:.15rem}
+.avantage-desc{font-size:.8rem;color:rgba(255,255,255,.6);line-height:1.4}
+
+@media(max-width:768px){
+  .avantages-grid{grid-template-columns:1fr;gap:1rem}
+}

@@ -1,0 +1,25 @@
+/* ============================================================
+   ELECTRO FILTERS
+============================================================ */
+.electro-filters{
+  display:flex;
+  gap:.6rem;
+  flex-wrap:wrap;
+  margin-bottom:2rem;
+}
+.filter-btn{
+  padding:.5rem 1.2rem;
+  border:2px solid var(--gray-mid);
+  border-radius:50px;
+  background:transparent;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--text-muted);
+  transition:var(--transition);
+  cursor:pointer;
+}
+.filter-btn:hover,.filter-btn.active{
+  background:var(--orange);
+  border-color:var(--orange);
+  color:#fff;
+}
